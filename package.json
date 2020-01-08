@@ -1,8 +1,8 @@
 {
-  "name": "fingo-ui",
+  "name": "fingo-ui-lib",
   "version": "1.0.0",
   "description": "a Library for vue",
-  "main": "index.js",
+  "main": "lib/fingo-ui.common.js",
   "files": [
     "lib",
     "src",
