@@ -1,0 +1,78 @@
+$statusColors: (
+  'primary': '#409eff',
+  'success': '#67c23a',
+  'warning': '#e6a23c',
+  'danger': '#f56c6c',
+  'info': '#909399',
+);
+
+$textColors: (
+  'main': '#303133',
+  'secondary': '#606266',
+  'muted': '#909399',
+  'note': '#c0c4cc'
+);
+
+$colors: (
+  'blue': '#0083EE',
+  'orange': '#FFCC33',
+  'green': '#30CC77',
+  'red': '#F34C4D',
+  'purple': '#6363FF'
+);
+
+$fill: (
+    'blue': '#0083EE',
+    'orange': '#FFCC33',
+    'green': '#30CC77',
+    'red': '#F34C4D',
+    'purple': '#6363FF'
+);
+
+$gradient: (
+  'black': 'linear-gradient(132deg,rgba(26,32,47,1) 0%,rgba(14,17,26,1) 100%);',
+  'green': 'linear-gradient(133deg,rgba(38,191,189,1) 0%,rgba(0,225,181,1) 100%);'
+);
+
+
+@each $name, $color in $statusColors {
+  .text__#{$name} {
+    color: #{$color};
+  }
+
+  .bg__#{$name} {
+    background-color: #{$color};
+  }
+}
+
+@each $name, $color in $textColors {
+  .text__#{$name} {
+    color: #{$color};
+  }
+
+  .bg__#{$name} {
+    background-color: #{$color};
+  }
+}
+
+@each $name, $color in $colors {
+  .text__#{$name} {
+    color: #{$color};
+  }
+
+  .bg__#{$name} {
+    background-color: #{$color};
+  }
+}
+
+@each $name, $color in $fill {
+  .fill__#{$name} {
+    background: #{$color};
+  }
+}
+
+@each $name, $color in $gradient {
+  .fill-gradient__#{$name} {
+    background: #{$color};
+  }
+}

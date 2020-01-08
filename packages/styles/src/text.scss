@@ -1,0 +1,33 @@
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+$fontWeights: (
+  'black': 900, 
+  'bold': 700, 
+  'medium': 500, 
+  'regular': 400, 
+  'light': 300, 
+  'thin': 100
+);
+
+
+@each $name, $value in $fontWeights {
+  .font-weight-#{$name} {
+    font-weight: #{$value} !important;
+  }
+}
+
+@each $size in 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32 {
+  .font-#{$size} {
+    font-size: #{$size}px !important;
+  }
+}
