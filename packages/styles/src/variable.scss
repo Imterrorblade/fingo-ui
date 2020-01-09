@@ -1,0 +1,49 @@
+/* 请在变量后面加上 default，以便外部引用时可以替换*/
+$statusColors: (
+  'primary': '#409eff',
+  'success': '#67c23a',
+  'warning': '#e6a23c',
+  'danger': '#f56c6c',
+  'info': '#909399',
+) !default;
+
+$textColors: (
+  'main': '#303133',
+  'secondary': '#606266',
+  'muted': '#909399',
+  'note': '#c0c4cc'
+) !default;
+
+$colors: (
+  'blue': '#0083EE',
+  'orange': '#FFCC33',
+  'green': '#30CC77',
+  'red': '#F34C4D',
+  'purple': '#6363FF'
+) !default;
+
+$fill: (
+    'blue': '#0083EE',
+    'orange': '#FFCC33',
+    'green': '#30CC77',
+    'red': '#F34C4D',
+    'purple': '#6363FF'
+) !default;
+
+$gradient: (
+  'black': 'linear-gradient(132deg,rgba(26,32,47,1) 0%,rgba(14,17,26,1) 100%);',
+  'green': 'linear-gradient(133deg,rgba(38,191,189,1) 0%,rgba(0,225,181,1) 100%);'
+)!default;
+
+$stepSize: (
+  'padding': 4px,
+  'margin': 4px,
+) !default;
+
+$direction: (
+  t: 'top',
+  b: 'bottom',
+  l: 'left',
+  r: 'right'
+)
+!default
