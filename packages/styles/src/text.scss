@@ -1,3 +1,14 @@
+@import './variable.scss';
+
+$fontWeights: (
+  'black': 900, 
+  'bold': 700, 
+  'medium': 500, 
+  'regular': 400, 
+  'light': 300, 
+  'thin': 100
+);
+
 .text-center {
   text-align: center !important;
 }
@@ -10,14 +21,6 @@
   text-align: left !important;
 }
 
-$fontWeights: (
-  'black': 900, 
-  'bold': 700, 
-  'medium': 500, 
-  'regular': 400, 
-  'light': 300, 
-  'thin': 100
-);
 
 
 @each $name, $value in $fontWeights {
