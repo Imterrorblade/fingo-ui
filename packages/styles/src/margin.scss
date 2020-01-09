@@ -1,0 +1,29 @@
+@import './variable.scss';
+
+@function getPx($num) {
+  @if $num == auto {
+    @return auto
+  } @else {
+    @return #{$num * 4px}
+  }
+};
+
+@each $var in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, auto {
+  .ma-#{$var} {
+    margin: getPx($var);
+  }
+  .mx-#{$var} {
+    margin-left: getPx($var);
+    margin-right: getPx($var);
+  }
+  .my-#{var} {
+    margin-top: getPx($var);
+    margin-bottom: getPx($var);
+  }
+  @each $key, $value in $direction  {
+    .m#{$key}-#{$var} {
+      margin-#{$value}: getPx($var)
+    }
+  }
+
+}
