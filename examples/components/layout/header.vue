@@ -312,10 +312,10 @@
           <li 
             class="nav-item nav-item-theme"
           >
-            <router-link
+            <a
               active-class="active"
-              to="/github">github
-            </router-link>
+              href="https://github.com/Imterrorblade/fingo-ui.git"><i class="doc-icon-github elementdoc"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -323,28 +323,18 @@
   </div>
 </template>
 <script>
-  // import ThemePicker from './theme-picker.vue';
   import AlgoliaSearch from '../search.vue';
-  // import compoLang from '../i18n/component.json';
-  // import Element from 'main/index.js';
-  // import themeLoader from './theme/loader';
-  // import { getTestEle } from './theme/loader/api.js';
-  // import bus from '../bus';
-  // import { ACTION_USER_CONFIG_UPDATE } from './theme/constant.js';
 
   export default {
     data() {
       return {
         active: '',
         versions: [],
-        verDropdownVisible: true
+        verDropdownVisible: true,
       };
     },
 
-    // mixins: [themeLoader],
-
     components: {
-      // ThemePicker,
       AlgoliaSearch
     },
 
@@ -355,13 +345,6 @@
     },
     methods: {
   
-      // handleVerDropdownToggle(visible) {
-      //   this.verDropdownVisible = visible;
-      // },
-
-      // handleLangDropdownToggle(visible) {
-      //   this.langDropdownVisible = visible;
-      // }
     },
 
     created() {
