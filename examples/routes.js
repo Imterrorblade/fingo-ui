@@ -31,6 +31,11 @@ export const menus = [{
     name: 'text',
     component: () => import('./docs/styles/text.md'),
     label: '文本'
+  }, {
+    path: 'flex',
+    name: 'flex',
+    component: ()=> import('./docs/styles/flex.md'),
+    label: 'flex布局'
   }]
 }];
 
