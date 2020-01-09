@@ -1,0 +1,41 @@
+$justifyFlex: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly
+);
+
+$alignFlex: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+);
+
+.flex {
+  display: flex;
+}
+
+@each $diration in row, row-reverse, column, column-reverse {
+  .flex-#{$diration} {
+    flex-direction: $diration;
+  }
+}
+
+@each $key, $val in $justifyFlex {
+  .justify-#{$key} {
+    justify-content: $val;
+  }
+};
+
+@each $key, $val in $alignFlex {
+  .align-#{$key} {
+    align-items: $val;
+  }
+  .align-self-#{$key} {
+    align-self: $val;
+  }
+}
