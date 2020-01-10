@@ -21,18 +21,21 @@ $alignFlex: (
 
 @each $diration in row, row-reverse, column, column-reverse {
   .flex-#{$diration} {
+    @extend .flex;
     flex-direction: $diration;
   }
 }
 
 @each $key, $val in $justifyFlex {
   .justify-#{$key} {
+    @extend .flex;
     justify-content: $val;
   }
 };
 
 @each $key, $val in $alignFlex {
   .align-#{$key} {
+    @extend .flex;
     align-items: $val;
   }
   .align-self-#{$key} {

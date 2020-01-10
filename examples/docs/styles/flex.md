@@ -26,22 +26,22 @@ flex类的简单用法
 
 ::: demo 
 ```html
-<div class="flex flex-row">
+<div class="flex-row">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--warning"></div>
   <div class="ma-1 pa-10 bg--danger"></div>
 </div>
-<div class="flex flex-column">
+<div class="flex-column">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--warning"></div>
   <div class="ma-1 pa-10 bg--danger"></div>
 </div>
-<div class="flex flex-row-reverse">
+<div class="flex-row-reverse">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--warning"></div>
   <div class="ma-1 pa-10 bg--danger"></div>
 </div>
-<div class="flex flex-column-reverse">
+<div class="flex-column-reverse">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--warning"></div>
   <div class="ma-1 pa-10 bg--danger"></div>
@@ -55,32 +55,32 @@ flex类的简单用法
 ::: demo
 
 ```html
-<div class="flex bg--muted mb-5 justify-start">
+<div class="bg--muted mb-5 justify-start">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div> 
-<div class="flex bg--muted mb-5 justify-center">
+<div class="bg--muted mb-5 justify-center">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div>
-<div class="flex bg--muted mb-5 justify-end">
+<div class="bg--muted mb-5 justify-end">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div>
-<div class="flex bg--muted mb-5 justify-between">
+<div class="bg--muted mb-5 justify-between">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div>
-<div class="flex bg--muted mb-5 justify-around">
+<div class="bg--muted mb-5 justify-around">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div>
-<div class="flex bg--muted mb-5 justify-evenly">
+<div class="bg--muted mb-5 justify-evenly">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
@@ -93,27 +93,27 @@ flex类的简单用法
 
 ::: demo 
 ```html
-<div class="flex bg--muted mb-5 align-start" style="height: 150px;">
+<div class="bg--muted mb-5 align-start" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div> 
-<div class="flex bg--muted mb-5 align-end" style="height: 150px;">
+<div class="bg--muted mb-5 align-end" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div> 
-<div class="flex bg--muted mb-5 align-center" style="height: 150px;">
+<div class="bg--muted mb-5 align-center" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div> 
-<div class="flex bg--muted mb-5 align-baseline" style="height: 150px;">
+<div class="bg--muted mb-5 align-baseline" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
 </div> 
-<div class="flex bg--muted mb-5 align-stretch" style="height: 150px;">
+<div class="bg--muted mb-5 align-stretch" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
@@ -127,27 +127,27 @@ flex类的简单用法
 
 ::: demo 
 ```html
-<div class="flex bg--muted mb-5 align-start" style="height: 150px;">
+<div class="bg--muted mb-5 align-start" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary align-self-start"></div>
 </div> 
-<div class="flex bg--muted mb-5 align-start" style="height: 150px;">
+<div class="bg--muted mb-5 align-start" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary align-self-end"></div>
 </div> 
-<div class="flex bg--muted mb-5 align-start" style="height: 150px;">
+<div class="bg--muted mb-5 align-start" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary align-self-center"></div>
 </div> 
-<div class="flex bg--muted mb-5 align-start" style="height: 150px;">
+<div class="bg--muted mb-5 align-start" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary align-self-baseline"></div>
 </div> 
-<div class="flex bg--muted mb-5 align-start" style="height: 150px;">
+<div class="bg--muted mb-5 align-start" style="height: 150px;">
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary"></div>
   <div class="ma-1 pa-10 bg--primary align-self-stretch"></div>
