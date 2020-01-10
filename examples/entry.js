@@ -10,7 +10,7 @@ import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'
 import './assets/styles/common.css';
 import './assets/styles/fonts/style.css';
-import 'packages/styles/src/index.scss';
+import 'packages/styles/index.scss';
 // import icon from './icon.json';
 
 Vue.use(Element);

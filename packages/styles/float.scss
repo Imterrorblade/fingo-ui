@@ -1,0 +1,13 @@
+@each $key in left, right, none {
+  .float-#{$key} {
+    float: $key;
+  }
+}
+
+.clear { 
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

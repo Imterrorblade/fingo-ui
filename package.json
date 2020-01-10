@@ -13,10 +13,10 @@
   "scripts": {
     "bootstrap": "yarn || npm i",
     "build:file": "node build/bin/build-entry.js",
-    "build:styles": "gulp build --gulpfile packages/styles/gulpfile.js && cp-cli packages/styles/lib lib/styles/",
+    "build:styles": "gulp build --gulpfile build/styles.build.js",
     "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
     "build:umd": "node build/bin/build-locale.js",
-    "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
+    "clean": "rimraf lib && rimraf test/**/coverage",
     "docs:build": "npm run build:file && cross-env NODE_ENV=production webpack --config build/webpack.demo.js && echo fingo.eleme.io>>examples/fingo-ui/CNAME",
     "docs:dev": "npm run bootstrap && npm run build:file && cross-env NODE_ENV=development webpack-dev-server --config build/webpack.demo.js & node build/bin/template.js",
     "build": "npm run clean && npm run build:file && npm run lint && webpack --config build/webpack.conf.js && webpack --config build/webpack.common.js && webpack --config build/webpack.component.js && npm run build:styles && npm run build:utils",
