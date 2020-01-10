@@ -1,27 +1,32 @@
 ## 文本样式
 文本样式设置
 
+:::tip
+At the age of seven, I caught a cicada and thought I had the whole summer.
+At the age of fourteen, I took a masturbate to the sky and thought that I had raped the the whole world.
+:::
 
-### 文本方向设置
+### 文本对齐设置
 
 ::: demo 
 ```html
-  <div class="text-left">this is a text left </div>
-  <div class="text-center">this is a text center </div>
-  <div class="text-right">this is a text right </div>
+  <div class="py-4 text-left">this is a text left</div>
+  <div class="py-4 text-center">this is text center</div>
+  <div class="py-4 text-right">this is a text right</div>
 ```
 :::
 
 ### 字重设置
+设置文字font-weight
 ::: demo 
 
 ```html
-<span class="font-weight-black">font-weight-black</span>
-<span class="font-weight-bold">fontk-weight-bold</span>
-<span class="font-weight-medium">fontk-weight-medium</span>
-<span class="font-weight-regular">fontk-weight-regular</span>
-<span class="font-weight-light">fontk-weight-light</span>
-<span class="font-weight-thin">fontk-weight-thin</span>
+<p class="pa-4 font-weight-black">font-weight-black</p>
+<p class="pa-4 font-weight-bold">fontk-weight-bold</p>
+<p class="pa-4 font-weight-medium">fontk-weight-medium</p>
+<p class="pa-4 font-weight-regular">fontk-weight-regular</p>
+<p class="pa-4 font-weight-light">fontk-weight-light</p>
+<p class="pa-4 font-weight-thin">fontk-weight-thin</p>
 ```
 :::
 
