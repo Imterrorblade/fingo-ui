@@ -4,7 +4,7 @@
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 
 ```
-npm i fingo-ui -S 或者 yarn add fingo-ui -D
+npm i fingo-ui-lib -S 或者 yarn add fingo-ui-lib -D
 
 ```
 

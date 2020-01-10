@@ -9,8 +9,8 @@
 在main.js中写入以下内容：
 ```js
 import Vue from 'vue'
-import FingoUi from 'fingo-ui'
-import 'fingo-ui/theme-chalk/index/scss'
+import FingoUi from 'fingo-ui-lib'
+import 'fingo-ui-lib/theme-chalk/index/scss'
 import App from './App.vue'
 
 Vue.use(FingoUi)
@@ -37,7 +37,7 @@ npm install babel-plugin-component -D
     [
       "component",
       {
-        "libraryName": "element-ui",
+        "libraryName": fingo-ui",
         "styleLibraryName": "theme-chalk"
       }
     ]
