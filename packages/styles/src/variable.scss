@@ -41,9 +41,12 @@ $stepSize: (
 ) !default;
 
 $direction: (
-  t: 'top',
-  b: 'bottom',
-  l: 'left',
-  r: 'right'
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+  x: (left, right),
+  y: (top, bottom),
+  a: (top, right, bottom, left)
 )
 !default

@@ -1,0 +1,13 @@
+@import './utils.scss';
+
+
+@mixin mapMargin($list, $num, $positive: true) {
+  @each $key in $list {
+    margin-#{$key}: getPx($num, $positive);
+  }
+}
+@mixin mapPadding($list, $num, $positive: true) {
+  @each $key in $list {
+    padding-#{$key}: getPx($num, $positive);
+  }
+}

@@ -1,0 +1,9 @@
+@function getPx($num, $positive: true) {
+  @if $num == auto {
+    @return auto
+  } @else if($positive == true) {
+    @return #{$num * 4px}
+  } @else {
+    @return #{$num * -4px}
+  }
+};

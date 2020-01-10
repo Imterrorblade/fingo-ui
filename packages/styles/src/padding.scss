@@ -1,28 +1,11 @@
 @import './variable.scss';
+@import './mixins.scss';
 
-@function getPx($num) {
-  @if $num == auto {
-    @return auto
-  } @else {
-    @return #{$num * 4px}
-  }
-};
 
-@each $var in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, auto {
-  .pa-#{$var} {
-    padding: getPx($var);
-  }
-  .px-#{$var} {
-    padding-left: getPx($var);
-    padding-right: getPx($var);
-  }
-  .py-#{var} {
-    padding-top: getPx($var);
-    padding-bottom: getPx($var);
-  }
-  @each $key, $value in $direction  {
-    .p#{$key}-#{$var} {
-      padding-#{$key}: getPx($var)
+@each $index in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, auto {
+  @each $key, $list in $direction {
+    .p#{$key}-#{$index} {
+      @include mapPadding($list, $index)
     }
   }
 };
