@@ -27,11 +27,27 @@ export const menus = [{
   name: 'styles',
   label: '样式',
   list: [{
+    path: 'reference',
+    name: 'reference',
+    component: ()=> import('./docs/styles/reference.md'),
+    label: '样式引入'
+  }, {
     path: 'text',
     name: 'text',
     component: () => import('./docs/styles/text.md'),
     label: '文本'
-  }, {
+  },{
+    path: 'margin',
+    name: 'margin',
+    component: ()=> import('./docs/styles/margin.md'),
+    label: 'margin边距'
+  }, 
+  {
+    path: 'padding',
+    name: 'padding',
+    component: ()=> import('./docs/styles/padding.md'),
+    label: 'padding边距'
+  },{
     path: 'flex',
     name: 'flex',
     component: ()=> import('./docs/styles/flex.md'),
