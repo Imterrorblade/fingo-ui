@@ -9,26 +9,47 @@ $fontWeights: (
   'thin': 100
 );
 
-.text-center {
-  text-align: center !important;
+//文字对齐方向
+
+@each $key in left, center, right, start, end {
+  .text-#{$key} {
+    text-align: $key !important; 
+  }
+};
+
+//文字不换行
+.text-no-wrap {
+  white-space: nowrap !important;
 }
 
-.text-right {
-  text-align: right !important;
+//文字省略
+.text-truncate {
+  white-space: nowrap !important;
+  overflow:  hidden !important;
+  text-overflow: ellipsis !important;
 }
 
-.text-left {
-  text-align: left !important;
+// 字体大小写，驼峰
+@each $key in lowercase, uppercase, capitalize {
+  text-#{$key} {
+    text-transform: $key !important;
+  }
+}
+//斜体
+.font-italic {
+  font-style: italic !important;
+}
+.font-normal {
+  font-style: normal !important;
 }
 
-
-
+//字重设置
 @each $name, $value in $fontWeights {
   .font-weight-#{$name} {
     font-weight: #{$value} !important;
   }
 }
-
+// font-size 设置
 @each $size in 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32 {
   .font-#{$size} {
     font-size: #{$size}px !important;
