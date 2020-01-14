@@ -52,6 +52,11 @@ export const menus = [{
     name: 'flex',
     component: ()=> import('./docs/styles/flex.md'),
     label: 'flex布局'
+  }, {
+    path: 'elevation',
+    name: 'elevation',
+    component: ()=> import('./docs/styles/elevation.md'),
+    label: 'elevation(悬浮)'
   }]
 }];
 
