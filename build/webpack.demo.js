@@ -107,7 +107,7 @@ const webpackConfig = {
       favicon: './examples/favicon.ico'
     }),
     new CopyWebpackPlugin([
-      { from: 'examples/versions.json' }
+      // { from: 'examples/versions.json' 
     ]),
     new ProgressBarPlugin(),
     new VueLoaderPlugin(),
