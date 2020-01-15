@@ -1,5 +1,5 @@
 import EnterPassword from '../packages/components/enterPassword/index.js';
-
+import componetnJson from '../components.json';
 const components = [
   EnterPassword
 ];
@@ -9,9 +9,8 @@ const version = `${process.env.version}`
 const install = function(Vue, opts = {}) {
 
   components.forEach(component => {
-    Vue.component(component.name, component);
+    component.install(Vue);
   });
-
 };
 
 /* istanbul ignore if */

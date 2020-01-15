@@ -44,4 +44,22 @@ npm install babel-plugin-component -D
   ]
 }
 ```
-接下来，如果你只希望引入部分组件，比如 Button 和 Select，那么需要在 main.js 中写入以下内容：
+接下来，如果你只希望引入部分组件，比如 demoCompont，那么需要在 main.js 中写入以下内容：
+
+```javascript
+import DemoComponent form 'fingo-ui-lib/lib/components/DemoComponent'
+
+//全局注册
+Vue.component('DemoComponent', DemoComponent);
+
+//局部注册
+export default {
+  data() {
+    return {}
+  },
+  components: {
+    DemoComponent
+  }
+}
+
+```
