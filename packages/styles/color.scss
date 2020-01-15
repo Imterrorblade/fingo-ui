@@ -1,43 +1,43 @@
 @import './variable.scss';
 
 @each $name, $color in $statusColors {
-  .text--#{$name} {
+  .text__#{$name} {
     color: #{$color};
   }
 
-  .bg--#{$name} {
+  .fill__#{$name} {
     background-color: #{$color};
   }
 }
 
 @each $name, $color in $textColors {
-  .text--#{$name} {
+  .text__#{$name} {
     color: #{$color};
   }
 
-  .bg--#{$name} {
+  .fill__#{$name} {
     background-color: #{$color};
   }
 }
 
 @each $name, $color in $colors {
-  .text--#{$name} {
+  .text__#{$name} {
     color: #{$color};
   }
 
-  .bg--#{$name} {
+  .fill__#{$name} {
     background-color: #{$color};
   }
 }
 
 @each $name, $color in $fill {
-  .fill--#{$name} {
+  .fill__#{$name} {
     background: #{$color};
   }
 }
 
 @each $name, $color in $gradient {
-  .fill-gradient--#{$name} {
+  .fill-gradient__#{$name} {
     background: #{$color};
   }
 }
