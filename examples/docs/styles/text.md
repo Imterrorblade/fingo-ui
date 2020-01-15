@@ -16,6 +16,42 @@ At the age of fourteen, I took a masturbate to the sky and thought that I had ra
 ```
 :::
 
+### 文字换行益处设置
+禁止文字换行 .text-no-wrap。 文字溢出省略 .text-truncate
+
+::: demo
+```html
+  <div class="py-4">
+    At the age of seven, I caught a cicada and thought I had the whole summer. At the age of fourteen, I took a masturbate to the sky and thought that I had raped the the whole world.
+ </div>
+ <div class="py-4 text-no-wrap">
+    At the age of seven, I caught a cicada and thought I had the whole summer. At the age of fourteen, I took a masturbate to the sky and thought that I had raped the the whole world.
+ </div>
+ <div class="py-4 text-truncate">
+    At the age of seven, I caught a cicada and thought I had the whole summer. At the age of fourteen, I took a masturbate to the sky and thought that I had raped the the whole world.
+ </div>
+```
+:::
+
+### 大小写设置
+小写 .text-lowercase,大写 .text-uppercase, 驼峰 .text-capitalize
+
+::: demo
+
+```html
+<p class="py-5 text-lowercase">
+At the age of seven, I caught a cicada and thought I had the whole summer. At the age of fourteen, I took a masturbate to the sky and thought that I had raped the the whole world.
+</p>
+<p class="py-5 text-uppercase">
+At the age of seven, I caught a cicada and thought I had the whole summer. At the age of fourteen, I took a masturbate to the sky and thought that I had raped the the whole world.
+</p>
+<p class="py-5 text-capitalize">
+At the age of seven, I caught a cicada and thought I had the whole summer. At the age of fourteen, I took a masturbate to the sky and thought that I had raped the the whole world.
+</p>
+```
+:::
+
+
 ### 字重设置
 设置文字font-weight
 ::: demo 

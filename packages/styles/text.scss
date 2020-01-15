@@ -31,7 +31,7 @@ $fontWeights: (
 
 // 字体大小写，驼峰
 @each $key in lowercase, uppercase, capitalize {
-  text-#{$key} {
+  .text-#{$key} {
     text-transform: $key !important;
   }
 }
