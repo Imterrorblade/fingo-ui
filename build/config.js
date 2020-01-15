@@ -7,6 +7,7 @@ var utilsList = fs.readdirSync(path.resolve(__dirname, '../src/utils'));
 var mixinsList = fs.readdirSync(path.resolve(__dirname, '../src/mixins'));
 var transitionList = fs.readdirSync(path.resolve(__dirname, '../src/transitions'));
 var externals = {};
+const version =  process.env.VERSION || require('../package.json').version;
 
 Object.keys(Components).forEach(function(key) {
   externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`;
@@ -31,6 +32,8 @@ externals = [Object.assign({
 }, externals), nodeExternals()];
 
 exports.externals = externals;
+
+exports.version = version;
 
 exports.alias = {
   main: path.resolve(__dirname, '../src'),

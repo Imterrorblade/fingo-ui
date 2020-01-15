@@ -2,6 +2,7 @@ const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = require('./config');
@@ -76,6 +77,10 @@ module.exports = {
   },
   plugins: [
     new ProgressBarPlugin(),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.FAAS_ENV': JSON.stringify(process.env.FAAS_ENV),
+      'process.env.version': JSON.stringify(config.version)
+    }),
   ]
 };
