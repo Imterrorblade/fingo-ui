@@ -10,21 +10,21 @@ var externals = {};
 const version =  process.env.VERSION || require('../package.json').version;
 
 Object.keys(Components).forEach(function(key) {
-  externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`;
+  externals[`fingo-ui/packages/components/${key}`] = `fingo-ui/lib/components/${key}`;
 });
 
-externals['element-ui/src/locale'] = 'element-ui/lib/locale';
+// externals['fingo-ui/src/locale'] = 'fingo-ui/lib/locale';
 utilsList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/utils/${file}`] = `element-ui/lib/utils/${file}`;
+  externals[`fingo-ui/src/utils/${file}`] = `fingo-ui/lib/utils/${file}`;
 });
 mixinsList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/mixins/${file}`] = `element-ui/lib/mixins/${file}`;
+  externals[`fingo-ui/src/mixins/${file}`] = `fingo-ui/lib/mixins/${file}`;
 });
 transitionList.forEach(function(file) {
   file = path.basename(file, '.js');
-  externals[`element-ui/src/transitions/${file}`] = `element-ui/lib/transitions/${file}`;
+  externals[`fingo-ui/src/transitions/${file}`] = `fingo-ui/lib/transitions/${file}`;
 });
 
 externals = [Object.assign({
