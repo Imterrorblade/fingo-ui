@@ -1,7 +1,7 @@
-## padding 边距设置
+## spacing 边距设置
 
-### margin基本用法
-.p{diraction}-{num} diraction为方向设置，取之为：a, x, y, t, b, l, 对应不同的方向。
+### 基本用法
+.m{diraction}-{num} .p{diraction}-{num}, m 代表margin， p代表pading， diraction为方向设置，取之为：a, x, y, t, b, l, 对应不同的方向。
 num 取之范围， 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, 12, auto ,基础值为4px，在此基础上乘以对应的数字。
 
 #### 方向对应关系
@@ -47,7 +47,32 @@ nj12: -48px,
 auto: auto,
 ```
 
-#### 示例演示
+#### margin 示例演示
+
+:::demo
+```html
+<div class="bg--muted pa-4">
+  <div class="bg--primary" style="height:100px"></div>
+</div>
+<div class="bg--muted mt-10 pa-8">
+  <div class="bg--primary" style="height:100px"></div>
+</div>
+<div class="bg--muted mt-10 pa-12">
+  <div class="bg--primary" style="height:100px"></div>
+</div>
+<div class="bg--muted mt-10 pa-10 pt-0">
+  <div class="bg--primary" style="height:100px"></div>
+</div>
+<div class="bg--muted mt-10 pa-10 pl-0">
+  <div class="bg--primary" style="height:100px"></div>
+</div>
+<div class="bg--muted mt-10 pa-10 pr-0">
+  <div class="bg--primary" style="height:100px"></div>
+</div>
+```
+:::
+
+#### padding 示例演示
 
 :::demo
 ```html
