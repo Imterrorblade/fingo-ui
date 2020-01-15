@@ -4,17 +4,17 @@
    <div class="main-cnt">
      <Container></Container>
    </div>
-   <Footer></Footer>
+   <!-- <Footer></Footer> -->
   </section>
 </template>
 <script>
 import Header from './header';
-import Footer from './footer';
+// import Footer from './footer';
 import Container from './container';
 export default {
   components: {
     Header,
-    Footer,
+    // Footer,
     Container
   }
 

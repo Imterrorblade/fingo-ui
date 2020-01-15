@@ -1,0 +1,7 @@
+$index: 48;
+
+@while ($index >= 0) {
+  .border-radius-#{$index} {
+    border-radius: #{$index}px;
+  }
+}

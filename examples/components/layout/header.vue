@@ -82,14 +82,14 @@
       }
     }
 
-    .nav-logo,
-    .nav-logo-small {
-      vertical-align: sub;
-    }
+    // .nav-logo,
+    // .nav-logo-small {
+    //   vertical-align: sub;
+    // }
 
-    .nav-logo-small {
-      display: none;
-    }
+    // .nav-logo-small {
+    //   display: none;
+    // }
 
     .nav-item {
       margin: 0;
@@ -199,6 +199,15 @@
   .nav-dropdown-list {
     width: auto;
   }
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    // padding-left: 32px;
+    img {
+      height: 70%;
+    }
+   }
 
   @media (max-width: 850px) {
     .header {
@@ -263,7 +272,15 @@
         display: none;
       }
     }
-  }
+  .logo {
+    height: 100%;
+    line-height: 100%;
+    padding-left: 32px;
+    img {
+      height: 80%;
+    }
+   }
+}
 </style>
 <template>
   <div class="headerWrapper">
@@ -272,14 +289,17 @@
         <h1><router-link to="/">
           <!-- logo -->
           <slot>
-            <img
-              src="../../assets/images/element-logo.svg"
-              alt="element-logo"
-              class="nav-logo">
-            <img
+            <section class="logo">
+              <img
+                src="../../assets/images/fingo-logo.png"
+                alt="element-logo"
+                class="nav-logo">
+            </section>
+            
+            <!-- <img
               src="../../assets/images/element-logo-small.svg"
               alt="element-logo"
-              class="nav-logo-small">
+              class="nav-logo-small"> -->
           </slot>
 
         </router-link></h1>
@@ -351,3 +371,6 @@
     }
   };
 </script>
+<style lang="scss" scoped>
+
+</style>
